@@ -1,0 +1,98 @@
+.graph {
+  grid-area: graph;
+  background: $secondary-color;
+  border: 1px solid #4d4d4d;
+  border-radius: $raunder;
+
+  @include sm {
+    overflow: auto;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 1.7em 3.9em 1.5em 0.9em;
+
+    @include md {
+      justify-content: center;
+    }
+
+    @include sm {
+      padding: 1.7em 1.5em 1.5em 0.9em;
+    }
+  }
+
+  &__title {
+    margin-right: 150px;
+    @include font($md-text, 700, 24px);
+    color: $lieght-color;
+
+    @include lg {
+      margin-right: 7em;
+    }
+
+    @include sm {
+      @include font($md-text, 600, 18px);
+      margin-right: 0.5em;
+    }
+  }
+
+  &__calendar {
+    margin-top: 3px;
+    @include font($xs-text, 500, 14px);
+    color: $lieght-color;
+  }
+
+  &__dropdown-icons {
+    margin-top: 3px;
+    margin-left: 9px;
+    margin-right: 0.5em;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  &__checkbox-total + label {
+    padding-left: 5px;
+    @include font($xs-text, 500, 14px);
+    color: $lieght-color;
+    text-align: center;
+  }
+  &__checkbox-total + label::before {
+    content: "\2713";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid $lightest-color;
+    background: #282c31;
+    color: $lightest-color;
+  }
+
+  &__checkbox-follower + label {
+    padding-left: 15px;
+    @include font($xs-text, 500, 14px);
+    text-align: center;
+    color: $lieght-color;
+  }
+
+  &__checkbox-follower + label::before {
+    content: "\2713";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid $active-color;
+    background: $secondary-color;
+    color: $secondary-color;
+  }
+
+  &__img {
+    min-width: 568px;
+    max-height: 120px;
+  }
+}

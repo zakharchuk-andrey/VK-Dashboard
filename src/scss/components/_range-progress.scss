@@ -1,0 +1,50 @@
+.range-progress {
+  grid-area: range-progress;
+  padding: 1.5em 0.3em 1.8em 1.5em;
+  background: $secondary-color;
+  border-radius: $raunder;
+  border: 1px solid #4d4d4d;
+
+  @include lg {
+    padding: 1em 3.5em 1em 5em;
+  }
+
+  @include sm {
+    padding: 2em 2.5em 1em 2.5em;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.2em;
+  }
+
+  &__title {
+    @include font($md-text, 700, 24px);
+    color: $lieght-color;
+
+    @include lg {
+      justify-content: center;
+    }
+
+    @include sm {
+      @include font($md-text, 600, 18px);
+    }
+  }
+
+  &__btn-country {
+    margin-left: 16em;
+    @include font($xs-text, 600, 14px);
+    color: $lieght-color;
+
+    @include sm {
+      margin-left: 11em;
+    }
+  }
+
+  &__btn-city {
+    padding-left: 0.3em;
+    @include font($xs-text, 500, 14px);
+    color: #979797;
+  }
+}

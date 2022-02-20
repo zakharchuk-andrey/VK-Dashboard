@@ -1,0 +1,62 @@
+.card {
+  grid-area: card;
+  grid-column: span 1;
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+  padding: 1.5em;
+  background: $secondary-color;
+  border-radius: $raunder;
+  border: 1px solid #4d4d4d;
+
+  @include lg {
+    padding: 1em;
+  }
+
+  @include sm {
+    grid-row: span 1;
+    grid-template-rows: auto;
+  }
+
+  &__title {
+    @include font($md-text, 700, 24px);
+    color: $lieght-color;
+
+    @include lg {
+      @include font($md-text, 600, 18px);
+    }
+
+    @include sm {
+      @include font($md-text, 600, 18px);
+    }
+  }
+
+  &__menu-btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.3em;
+  }
+
+  &__information {
+    display: flex;
+    align-items: flex-end;
+    @include font($md-text, 500, 24px);
+    color: $lieght-color;
+  }
+
+  &__statistics {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    @include font($md-text, 500, 24px);
+    color: $lieght-color;
+  }
+
+  &__arrow {
+    margin-bottom: 0.2em;
+    margin-left: 0.8em;
+
+    @include lg {
+      margin-left: 0.5em;
+    }
+  }
+}
