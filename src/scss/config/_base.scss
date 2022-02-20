@@ -26,23 +26,4 @@
       "main";
     margin: 0px auto;
   }
-
-  &__img-ellipse {
-    position: absolute;
-    transform: translate(50%,50%);
-    left: 70%;
-    top: 90%;
-
-    @include lg {
-      display: none;
-    }
-
-    @include md {
-      display: none;
-    }
-
-    @include sm {
-      display: none;
-    }
-  }
 }
