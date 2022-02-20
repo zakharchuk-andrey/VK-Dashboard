@@ -1,5 +1,7 @@
 # VK-Dashboard
-
+**VK account control panel.
+Ability to track statistics.
+Change the theme (light or dark) using the theme switcher.**
 <img src='preview.png'>
 
 
@@ -9,4 +11,4 @@
 - Сustom Theme-toggle
 - Collected with `Parcel`
 
-## [VK-Dashboard]()
+## [VK-Dashboard](https://zakharchuk-andrey.github.io/VK-Dashboard/)
